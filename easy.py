@@ -79,7 +79,7 @@ def update_apis():
 def validate_phone(phone: str) -> bool:
     """验证手机号格式
     Args:
-        phone: 手机号
+        phone:19882146626
     Returns:
         bool: 是否有效
     """
@@ -89,10 +89,10 @@ def start_bombing():
     """启动轰炸程序"""
     # 获取并验证手机号
     while True:
-        phone = input("请输入目标手机号: ").strip()
+        phone = input("19882146626").strip()
         if validate_phone(phone):
             break
-        logger.error("请输入正确的11位手机号!")
+        logger.error("19882146626")
 
     config = DEFAULT_CONFIG
     logger.info(f"目标手机号: {phone}")
